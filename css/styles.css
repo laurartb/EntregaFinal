@@ -1,6 +1,7 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #000000;
+    --border-color: #9d9c9c;
     --accent-color: #8a6bd2;
     --background-color: #c9c9c9;
     --font-family: 'Petit Formal Script', cursive;
@@ -9,15 +10,23 @@
 }
 
 .petit-formal-script-regular {
-  font-family: "Petit Formal Script", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cormorant-garamond-300 {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
 }
 
 body {
@@ -32,50 +41,53 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* Estilos generales de la sección */
-.sobre-nosotros {
-  max-width: 800px;      /* ancho máximo del contenido para que no se estire en pantallas grandes */
-  margin: 0 auto;        /* centra la sección horizontalmente */
-  padding: 40px 20px;    /* espacio interno: 40px arriba/abajo, 20px izquierda/derecha */
-  font-family: 'Arial', sans-serif; /* tipografía base de respaldo */
-  line-height: 1.6;     /* separa las líneas del texto para que sea más legible */
+.parrafo {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 50px 50px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
 }
 
-/* Estilos de los títulos */
-.sobre-nosotros h2 {
-  font-family: var(--font-family);
-  font-size: 20px;      /* tamaño del texto */
-  font-weight: 400;    /* grosor ligero para mantener minimalismo */
-  margin-top: 30px;    /* espacio superior entre secciones */
-  margin-bottom: 10px; /* espacio inferior antes del párrafo */
-  color: #222;        /* casi negro, suave para diseño minimalista */
+.h2 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--accent-color);
 }
 
-/* Estilos de los párrafos */
-.sobre-nosotros p {
-  font-family: var(--font-family-2);
-  font-size: 16px;     /* tamaño base del texto */
-  color: #555;        /* gris suave para que no sea tan fuerte visualmente */
-  margin-bottom: 20px; /* espacio después de cada párrafo */
+.p {
+    font-family: var(--font-family-2);
+    font-size: 16px;     
+    color: var(--secondary-color);        
+    margin-bottom: 20px;
 }
 
-/* Estilos del slogan dentro de About */
 .tagline {
-  display: block;      /* hace que ocupe toda una línea */
-  color: #888;       /* gris más claro para jerarquía visual */
-  margin-top: 8px;   /* separación del texto superior */
-  font-style: italic; /* cursiva para diferenciarlo */
+    display: block;      
+    color: var(--secondary-color);
+    margin-top: 8px;
+    font-style: italic;
+    font-family: var(--font-family-2);
 }
 
-/* Estilos de la lista de valores */
 .sobre-nosotros ul {
-  padding-left: 18px;  /* sangría para que no esté pegado al borde */
-  font-family: var(--font-family-2);
+    padding-left: 18px;
+    font-family: var(--font-family-2);
 }
 
 .sobre-nosotros ul li {
-  font-family: var(--font-family-2);
-  font-size: 15px;    /* ligeramente menor para jerarquía */
-  color: #555;       /* mismo gris que el resto del texto */
-  margin-bottom: 8px; /* espacio entre cada ítem */
+    font-family: var(--font-family-2);
+    font-size: 15px;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary-color);
+    font-family: var(--font-family-2);
 }
