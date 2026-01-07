@@ -7,43 +7,10 @@
     --font-family: 'Petit Formal Script', cursive;
     --font-family-2: 'Cormorant Garamond', serif;
     --font-size-base: 16px;
-     --bg: #ffffff;
   --text: #111111;
   --muted: #666666;
   --line: #e9e9e9;
-  --max: 1120px;
-}
-
-*{
-  box-sizing: border-box;
-}
-
-body{
-  margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  color: var(--text);
-  background: var(--bg);
-}
-
-main{
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 32px 24px 80px;
-}
-
-section{
-  padding: 56px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-h1,h2,h3{
-  margin: 0 0 14px;
-}
-
-p{
-  margin: 0 0 12px;
-  color: var(--muted);
-  line-height: 1.7;
+    --max: 1120px;
 }
 
 .petit-formal-script-regular {
@@ -60,14 +27,30 @@ p{
 
 
 body {
-    font-family: var(--font-family-2);
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 32px 64px;
+}
+
+section {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 h1 {
     color: var(--accent-color);
-    font-family: var(--font-family);
+    font-family: var(--font-family-2);
     margin-bottom: 1rem;
 }
 
@@ -121,6 +104,7 @@ h1 {
     color: var(--secondary-color);
     font-family: var(--font-family-2);
 }
+
 header{
   position: sticky;
   top: 0;
@@ -143,7 +127,6 @@ header{
   width: auto;
 }
 
-/* NAV */
 nav ul{
   list-style: none;
   display: flex;
@@ -158,7 +141,6 @@ nav a{
   font-size: 14px;
 }
 
-/* MENU MOBILE */
 .menu-toggle{
   display: none;
   border: 1px solid var(--line);
@@ -166,6 +148,12 @@ nav a{
   padding: 8px 10px;
   cursor: pointer;
 }
+
+
+
+
+
+
 
 @media (max-width: 768px){
   .menu-toggle{ display: inline-flex; }
