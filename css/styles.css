@@ -4,19 +4,20 @@
     --border-color: #9d9c9c;
     --accent-color: #8a6bd2;
     --background-color: #c9c9c9;
-    --font-family: 'Petit Formal Script', cursive;
+
+    --font-family: "Petit Formal Script" , cursive;
     --font-family-2: 'Cormorant Garamond', serif;
     --font-size-base: 16px;
-  --text: #111111;
+
   --muted: #666666;
   --line: #e9e9e9;
     --max: 1120px;
 }
 
 .petit-formal-script-regular {
-    font-family: "Petit Formal Script", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .cormorant-garamond-300 {
@@ -25,12 +26,38 @@
     font-style: normal;
 }
 
-
-body {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+.logo{
+  height: 36px;
+  width: auto;
 }
 
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+.menu-toggle{
+  display: none;
+  background: #fff;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-base);
+  background-color: var(--border-color)
+}
 main {
   max-width: var(--max);
   margin: 0 auto;
@@ -44,14 +71,13 @@ section {
 
 p {
   margin: 0 0 12px;
-  color: var(--muted);
   line-height: 1.7;
 }
 
 h1 {
     color: var(--accent-color);
-    font-family: var(--font-family-2);
-    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-size: 50px;
 }
 
 .parrafo {
@@ -64,15 +90,10 @@ h1 {
 
 .h2 {
     font-family: var(--font-family);
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 10px;
     color: var(--accent-color);
 }
 
 .p {
-    font-family: var(--font-family-2);
     font-size: 16px;     
     color: var(--secondary-color);        
     margin-bottom: 20px;
@@ -101,7 +122,7 @@ h1 {
 .footer {
     text-align: center;
     padding: 20px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: var(--font-family-2);
 }
 
@@ -115,38 +136,6 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.brand{
-  display: flex;
-  align-items: center;
-}
-
-.logo{
-  height: 36px;
-  width: auto;
-}
-
-nav ul{
-  list-style: none;
-  display: flex;
-  gap: 18px;
-  margin: 0;
-  padding: 0;
-}
-
-nav a{
-  text-decoration: none;
-  color: var(--text);
-  font-size: 14px;
-}
-
-.menu-toggle{
-  display: none;
-  border: 1px solid var(--line);
-  background: #fff;
-  padding: 8px 10px;
-  cursor: pointer;
 }
 
 
@@ -206,7 +195,7 @@ nav a{
 
 .btn{
   padding: 12px 16px;
-  border: 1px solid var(--text);
+  border: 1px solid var(--secondary-color);
   text-decoration: none;
   font-size: 14px;
 }
