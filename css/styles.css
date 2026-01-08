@@ -88,7 +88,7 @@ h1 {
     border: 1px solid var(--border-color);
 }
 
-.h2 {
+h2 {
     font-family: var(--font-family);
     color: var(--accent-color);
 }
