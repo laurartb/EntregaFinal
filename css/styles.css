@@ -314,8 +314,11 @@ header{
     height: 260px;
   }
 }
-#fashelaChart {
-  width: 100%;
-  height: 350px !important;
-  display: block;
+.chart-container{
+  max-width: 600px;
+  height: 350px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
 }
