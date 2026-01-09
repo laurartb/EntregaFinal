@@ -1,4 +1,4 @@
-
+//MENU
 const menuToggle = document.getElementById("menuToggle");
 const nav = document.querySelector("header nav");
 
@@ -12,6 +12,7 @@ document.querySelectorAll("header nav a").forEach(a=>{
 
 document.documentElement.style.scrollBehavior = "smooth";
 
+//CHART
 const ctx = document.getElementById('fashelaChart');
 
 if (ctx) {
