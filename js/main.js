@@ -12,4 +12,3 @@ document.querySelectorAll("header nav a").forEach(a=>{
 
 document.documentElement.style.scrollBehavior = "smooth";
 
-
