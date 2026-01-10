@@ -100,6 +100,8 @@ section {
 a { color: inherit; }
 
 
+
+
 h1, h2, h3 {
   margin: 0 0 14px;
   font-weight: 500;
@@ -127,6 +129,7 @@ p {
   line-height: 1.7;
   color: var(--muted);
   max-width: 760px;
+  display: flex;
 }
 
 
@@ -135,7 +138,12 @@ p {
   margin: 0 auto;
   padding: 40px 40px;
   background: var(--primary-color);
+  text-align: center;
+  justify-content: center;
 }
+
+
+
 
 .parrafo1 {
   max-width: 100%;
@@ -144,11 +152,25 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
+
+.parrafo1 h2 {
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.parrafo1 p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+
 
 
 .coleccion-btn {
@@ -229,6 +251,10 @@ p {
   font-size: 20px;
   margin-top: 5vh;
 }
+
+
+
+
 
 /*CHART*/
 .chart-container {
@@ -391,7 +417,10 @@ p {
     }
 }
 
-/* MODAL*/
+
+
+
+/* MODAL DE API*/
 .modal {
     display: none; 
     position: fixed;
