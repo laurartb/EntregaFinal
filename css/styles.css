@@ -142,9 +142,11 @@ p {
   justify-content: center;
 }
 
-.parrafo p {
+main p {
   display: block;
   text-align: center;
+  margin: 0 auto 12px;
+  max-width: 760px;
 }
 
 
