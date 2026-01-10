@@ -12,6 +12,7 @@ document.querySelectorAll("header nav a").forEach(a=>{
 
 document.documentElement.style.scrollBehavior = "smooth";
 
+
 //CHART
 const ctx = document.getElementById('fashelaChart');
 
