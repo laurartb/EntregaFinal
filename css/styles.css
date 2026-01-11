@@ -599,6 +599,32 @@ main p {
   color: var(--secondary-color);
 }
 
+.values__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 16px;
+  text-align: center;
+  max-width: 520px;
+}
+
+.values__list li {
+  margin: 0 8px 10px;
+  color: var(--secondary-color);
+  display: inline-block;
+  padding: 0 6px 0 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.values__list li::before {
+  content: "•";
+  display: inline-block;
+  margin-right: 6px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
 
 .map-embed {
   margin-top: 18px;
@@ -673,4 +699,20 @@ main p {
 .btn-equipo:hover{
   background: var(--secondary-color);
   color: var(--primary-color);
+}
+
+.imagen-centro img {
+  width: 60%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  margin: 24px auto 0;
+}
+
+@media (max-width: 900px) {
+  .imagen-centro img { width: 80%; max-width: 360px; }
+}
+
+@media (max-width: 520px) {
+  .imagen-centro img { width: 90%; max-width: 320px; }
 }
