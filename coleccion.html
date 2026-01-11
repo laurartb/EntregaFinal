@@ -13,11 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Petit+Formal+Script&display=swap" rel="stylesheet">
     
-    <script src="js/api.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/chart.js" defer></script>
 
 
 </head>
@@ -32,6 +32,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li> <a href="coleccion.html">Colección</a></li>
                 <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><button class="carrito-icono" id="btnCarrito" type="button">🛒</button></li>
             </ul>
         </nav>
     </header>
@@ -91,6 +92,24 @@
         </section>
     </main>
     
+    <aside class="carrito" id="carrito">
+  <div class="carrito__header">
+    <h3>Tu carrito</h3>
+    <button class="carrito__cerrar" id="btnCerrarCarrito">✕</button>
+  </div>
+
+  <div class="carrito__contenido">
+    <p>Tu carrito está vacío.</p>
+  </div>
+
+  <div class="carrito__footer">
+    <p><strong>Total:</strong> $0.00</p>
+    <button class="carrito__checkout">Finalizar compra</button>
+  </div>
+</aside>
+
+<div class="carrito-overlay" id="carritoOverlay"></div>
+
     <footer class="footer">
         <div class="footer1">
             <section class="footer-izquierda">

@@ -31,6 +31,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li> <a href="coleccion.html">Colección</a></li>
                 <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li> <button class="carrito-icono" id="btnCarrito" type="button">🛒</button></li>
             </ul>
         </nav>
     </header>
@@ -85,6 +86,24 @@
         <a href="mailto:michelasantilli.13@gmail.com?subject=quiero postularme" class="btn-equipo"> Quiero postularme </a>
     </div>
 </section>
+
+<aside class="carrito" id="carrito">
+  <div class="carrito__header">
+    <h3>Tu carrito</h3>
+    <button class="carrito__cerrar" id="btnCerrarCarrito">✕</button>
+  </div>
+
+  <div class="carrito__contenido">
+    <p>Tu carrito está vacío.</p>
+  </div>
+
+  <div class="carrito__footer">
+    <p><strong>Total:</strong> $0.00</p>
+    <button class="carrito__checkout">Finalizar compra</button>
+  </div>
+</aside>
+
+<div class="carrito-overlay" id="carritoOverlay"></div>
 
     </main>
     <footer class="footer">
