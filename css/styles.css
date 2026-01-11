@@ -203,6 +203,27 @@ main p {
 
 
 
+.equipo-btn{
+  margin-top: 20px;
+}
+
+.btn-equipo{
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid var(--secondary-color);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-equipo:hover{
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+
 
 
 /*FOOTER*/
@@ -483,31 +504,7 @@ main p {
 
 
 
-.lista-valores{
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 16px;
-  text-align: center;
-  max-width: 520px;
-}
 
-.lista-valores li {
-  margin: 0 8px 10px;
-  color: var(--secondary-color);
-  display: inline-block;
-  padding: 0 6px 0 0;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.lista-valores li::before {
-  content: "•";
-  display: inline-block;
-  margin-right: 6px;
-  color: var(--secondary-color);
-  font-weight: 700;
-  font-size: 1.1em;
-}
 
 
 .map-embed {
@@ -522,6 +519,9 @@ main p {
   border: 0;
   display: block;
 }
+
+
+
 
 
 .app-soon {
@@ -560,33 +560,7 @@ main p {
 
 
 
-.equipo-btn{
-  margin-top: 20px;
-}
-
-.btn-equipo{
-  display: inline-block;
-  padding: 12px 24px;
-  border: 1px solid var(--secondary-color);
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.btn-equipo:hover{
-  background: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-.imagen-centro img {
-  width: 60%;
-  max-width: 420px;
-  height: auto;
-  display: block;
-  margin: 24px auto 0;
-}
+/*CARRITO*/
 
 .carrito-icono{
   border: none;
@@ -673,7 +647,7 @@ main p {
 
 
 
-/*RESPONSIVE*/
+/*RESPONSIVE Y MEDIA*/
 
 @media (max-width: 768px){
   .menu-toggle{ display: inline-flex; }
